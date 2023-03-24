@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.form-container{
+    display:flex;
+    border:1px solid black;
+    padding:10px;
+    border-radius: 10px;
+    height:10vh;
+}
+input{
+    display:flex;
+    flex:1;
+    border: none;
+    outline:none;
+    font-size: 30px;
+    margin-left: 5px;
+}
+button{
+    width:20%;
+    border:none;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-size: 30px;
+}
+.display__container{
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top:10px;
+    padding:10px;
+    height:70vh;
+}
+.displaycharacter__container{
+    display:flex;
+    justify-content: center;
+    align-items:baseline;
+    height:100%;
+}
+.displaycharacter__container > .character{
+    font-size: 200px;
+    color:gray;
+}
+.side__character{
+    color:green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Extra Small (xs) - Up to 576px */
+@media (max-width: 575.98px) { 
+    .form-container{
+        display:flex;
+        flex-direction: column;
+        border:1px solid black;
+        padding:20px;
+        border-radius: 10px;
+        height:10vh;
+    }
+    input{
+        display:flex;
+        flex:1;
+        border: none;
+        outline:none;
+        font-size: 20px;
+        height:50%;
+        margin-left: 5px;
+        margin-bottom:5px;
+        align-items: center;
+    }
+    button{
+        width:100%;
+        border:none;
+        border-radius: 10px;
+        background-color: black;
+        height:50%;
+        color:white;
+        font-size: 20px;
+        padding:5px;
+    }
+
+    .displaycharacter__container > .character{
+        font-size: 150px;
+        color:gray;
+    }
+    .side__character{
+        color:green;
+        font-size: 20px;
+        font-weight: bold;
+    }
+ }
+/* Small (sm) - Between 576px and 768px */
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium (md) - Between 768px and 992px */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large (lg) - Between 992px and 1200px  */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra Large (xl) - 1200px and above  */
+@media (min-width: 1200px) { ... }
+
+/*  */
